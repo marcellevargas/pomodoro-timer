@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = useState(600);
+  const [timeLeft, setTimeLeft] = useState(1500);
 
   useEffect(() => {
     if (timeLeft === 0) return;
@@ -24,7 +24,7 @@ const CountdownTimer = () => {
   return (
     <>
       <div>
-        <button onClick={() => setTimeLeft(600)}>Recomeçar</button>
+        <button onClick={() => setTimeLeft(1500)}>Recomeçar</button>
         <h1>{formatTime()}</h1>
       </div>
     </>
