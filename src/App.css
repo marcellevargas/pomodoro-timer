@@ -33,6 +33,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,16 +41,26 @@
 
 @font-face {
   font-family: ds-digital;
-  src:url("./assets/fonts/DS-DIGI.ttf");
+  src: url("./assets/fonts/DS-DIGI.ttf");
 }
 
 @font-face {
   font-family: bad-crying;
-  src:url("./assets/fonts/KGDownBadCryingAtTheGym.ttf");
+  src: url("./assets/fonts/KGDownBadCryingAtTheGym.ttf");
 }
 
 h1 {
   font-family: "bad-crying" !important;
   font-size: 16em;
   color: white;
+}
+
+.timer-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }

@@ -23,7 +23,7 @@ const CountdownTimer = () => {
 
   return (
     <>
-      <div>
+      <div className="timer-container">
         <button onClick={() => setTimeLeft(3000)}>Recomeçar</button>
         <h1>|{formatTime()}|</h1>
       </div>
