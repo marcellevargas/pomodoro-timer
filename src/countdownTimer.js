@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = useState(1500);
+  const [timeLeft, setTimeLeft] = useState(3000);
 
   useEffect(() => {
     if (timeLeft === 0) return;
@@ -17,15 +17,15 @@ const CountdownTimer = () => {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
     return `${minutes.toString().padStart(2, "0")}:${seconds
-      .toString()
+      .toString() 
       .padStart(2, "0")}`;
   };
 
   return (
     <>
       <div>
-        <button onClick={() => setTimeLeft(1500)}>Recomeçar</button>
-        <h1>{formatTime()}</h1>
+        <button onClick={() => setTimeLeft(3000)}>Recomeçar</button>
+        <h1>|{formatTime()}|</h1>
       </div>
     </>
   );

@@ -40,11 +40,16 @@
 
 @font-face {
   font-family: ds-digital;
-  src:url("./DS-DIGI.ttf");
+  src:url("./assets/fonts/DS-DIGI.ttf");
+}
+
+@font-face {
+  font-family: bad-crying;
+  src:url("./assets/fonts/KGDownBadCryingAtTheGym.ttf");
 }
 
 h1 {
-  font-family: "ds-digital" !important;
-  font-size: 20em;
+  font-family: "bad-crying" !important;
+  font-size: 16em;
   color: white;
 }
